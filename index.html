@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+
+</head>
+
+<body onload="initialize()">
+  <div class="header">
+    <h1> Simple, traffic-based pricing</h1>
+    <p class="grayish-blue"> Sign-up for our 30-day trial. <span class="mobile-block">No credit card required.</span>
+    </p>
+    <img src="images/pattern-circles.svg" alt="circles" class="circles">
+  </div>
+
+  <main>
+    <div class="prices-display">
+      <p class="pageviews grayish-blue"><span class="pageviews-amount"> </span> PAGEVIEWS</p>
+
+      <div class="mobile-per-month mobile-hide">
+        <p class="mobile-fz-1 mobile-actual-price"></p>
+        <p class="grayish-blue mobile-per-display">/
+          month</p>
+      </div>
+    </div>
+
+    <div class="slider-container">
+      <input type="range" min="2" max="10" class="slider">
+    </div>
+
+    <div class="per-month desktop-hide">
+      <p class="fz-1 actual-price"></p>
+      <p class="grayish-blue per-display">/
+        month</p>
+    </div>
+
+
+    <div class="billing-selector-container">
+      <p class="grayish-blue">Monthly Billing</p>
+      <div class="toggle-container">
+        <div class="toggle-ball"></div>
+      </div>
+      <p class="grayish-blue">Yearly Billing </p>
+      <p class="discount-tag desktop-hide">-25%</p>
+      <p class="discount-tag mobile-hide"> 25% <span class="mobile-hide">discount</span></span></p>
+    </div>
+    <footer>
+      <ul class="benefits">
+        <li class="grayish-blue"><img src="images/icon-check.svg" alt="v" class="green-checkmarks"> Unlimited websites
+        </li>
+        <li class="grayish-blue"><img src="images/icon-check.svg" alt="v" class="green-checkmarks"> 100% data
+          ownership
+        </li>
+        <li class="grayish-blue"><img src="images/icon-check.svg" alt="v" class="green-checkmarks"> Email reports</li>
+      </ul>
+      <button class="cta">Start my trial</button>
+    </footer>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/practitionerofsorts"
+      target="_blank">practitionerofsorts/promise</a>.
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
